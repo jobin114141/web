@@ -17,9 +17,9 @@ CSS STRUCTURE:
 2. GENERAL TYPOGRAPHY
 
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
 body {
-  --heading-font: "Tenor Sans", sans-serif;
+  --heading-font: "Garamond", serif;
   --heading-font-weight: 400;
   --heading-color: #111;
   --heading-line-height: 1.24;
