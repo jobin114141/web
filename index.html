@@ -18,6 +18,9 @@
       color: white !important;
       /* Color on large screens */
     }
+    .contactHide-link {
+      display: none !important;
+    }
   }
 </style>
 
@@ -181,46 +184,7 @@
 
   <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
 
-  <div class="search-popup">
-    <div class="search-popup-container">
 
-      <form role="search" method="get" class="form-group" action="index.html">
-        <input type="search" id="search-form" class="form-control border-0 border-bottom"
-          placeholder="Type and press enter" value="" name="s">
-        <button type="submit" class="search-submit border-0 position-absolute bg-white"
-          style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
-            <use xlink:href="#search"></use>
-          </svg></button>
-      </form>
-
-      <h5 class="cat-list-title">Browse Categories</h5>
-
-      <ul class="cat-list">
-        <li class="cat-list-item">
-          <a href="#" title="Jackets">Jackets</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="T-shirts">T-shirts</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Handbags">Handbags</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Accessories">Accessories</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Cosmetics">Cosmetics</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Dresses">Dresses</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Jumpsuits">Jumpsuits</a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
 
   <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart">
     <div class="offcanvas-header justify-content-center">
@@ -370,7 +334,7 @@
                   <a class="nav-link contact-link" href="single-post-no-sidebar.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link contact-link" href="contact.html">Contact</a>
+                  <a class="nav-link contact-link contactHide-link" href="contact.html">Contact</a>
                 </li>
 
               </ul>
@@ -382,8 +346,8 @@
           <ul class="list-unstyled d-flex m-0">
 
 
-            <li class="d-none d-lg-block" style="visibility: hidden;">
-              <a href="#" class="text-uppercase mx-3">Wishlist <span class="wishlist-count">(0)</span></a>
+            <li class="nav-item">
+              <a class="nav-link contact-link" href="contact.html">Contact</a>
             </li>
 
             <!-- <li class="d-none d-lg-block">
@@ -430,9 +394,10 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-6 offset-md-3 text-center">
-                  <h2 class="display-1" style="color: white !important;">Bridging the Gap Between Brands and World-Class
-                    Apparel Manufacturing</h2>
-
+                  <!-- <h3 class="display-1" style="color: white !important;">Bridging the Gap Between Brands and World-Class
+                    Apparel Manufacturing</h3> -->
+                    <h3 class="page-title text-uppercase" style="color: white !important;">Bridging the Gap Between Brands and World Class
+                      Apparel Manufacturing</h3>
                   <p class="caption">From design to final delivery, we ensure seamless apparel production tailored to
                     your needs, combining flexibility, quality, and sustainability</p>
                   <!-- <div class="btn-left btn-swiper">
@@ -443,39 +408,9 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide d-flex align-items-center" style="background-image:url(images/banner-large-3.jpg);">
-          <div class="banner-content w-100">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 offset-md-3 text-center">
-                  <h2 class="display-1">Cripcrop style</h2>
-                  <p class="caption">Tortor eget placerat arcu integer. Lectus fames egestas tincidunt aliquet vivamus
-                    nibh lorem nulla.</p>
-                  <!-- <div class="btn-left btn-swiper">
-                    <a href="#" class="btn btn-light text-uppercase mt-3">Shop Collection</a>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide d-flex align-items-center" style="background-image:url(images/banner-large-1.jpg);">
-          <div class="banner-content w-100">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 offset-md-3 text-center">
-                  <h2 class="display-1">Modern style</h2>
-                  <p class="caption">This is Modern fashion ectus fames egestas tincidunt aliquet vivamus nibh lorem
-                    nulla.</p>
-                  <!-- <div class="btn-left btn-swiper">
-                    <a href="#" class="btn btn-light text-uppercase mt-3">Shop Collection</a>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide d-flex align-items-center" style="background-image:url(images/banner-large-2.jpg);">
+   
+      
+        <!-- <div class="swiper-slide d-flex align-items-center" style="background-image:url(images/banner-large-2.jpg);">
           <div class="banner-content w-100">
             <div class="container">
               <div class="row">
@@ -483,22 +418,22 @@
                   <h2 class="display-1">Modern style</h2>
                   <p class="caption">Tortor eget placerat arcu integer. Lectus fames egestas tincidunt aliquet vivamus
                     nibh lorem nulla.</p>
-                  <!-- <div class="btn-left btn-swiper">
+                  <div class="btn-left btn-swiper">
                     <a href="#" class="btn btn-light text-uppercase mt-3">Shop Collection</a>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-pagination"></div>
+        </div> -->
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
-      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+      <!-- <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
           <use xlink:href="#angle-left"></use>
         </svg></div>
       <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
           <use xlink:href="#angle-right"></use>
-        </svg></div>
+        </svg></div> -->
     </div>
   </section>
   <!-- <section id="billboard" class="bg-light py-5">
@@ -1244,11 +1179,15 @@
           </div>
         </div> -->
         <div class="col-md-3 col-sm-6">
+          
           <div class="footer-menu footer-menu-004 border-animation-left">
             <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
+
+            <p><a href="home4.html" class="item-anchor">Commitment & Environment Page</a>
             <p><a href="mailto:contact@yourcompany.com"
                 class="item-anchor">contact@Norbond.com</a></p>
             <p><a href="tel:+43720115278" class="item-anchor">+43 720 115 278</a>
+             
             </p>
           </div>
         </div>

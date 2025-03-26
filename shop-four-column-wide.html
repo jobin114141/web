@@ -1,5 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+  /* Common styles only for this page */
+  @media screen and (max-width: 991px) {
+
+    /* Mobile */
+    .contact-link {
+      color: black !important;
+      /* Color on mobile */
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+
+    /* Large screens */
+    .contact-link {
+      color: white !important;
+      /* Color on large screens */
+    }
+
+    .contactHide-link {
+      display: none !important;
+    }
+  }
+</style>
 
 <head>
   <title>Norbond</title>
@@ -244,14 +268,14 @@
       </div>
     </div>
   </div>
-
-  <nav class="navbar navbar-expand-lg navbar-light text-uppercase fs-6 p-3 border-bottom align-items-center">
+  <nav
+    class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
     <div class="container-fluid">
       <div class="row justify-content-between align-items-center w-100">
 
         <div class="col-auto">
-          <h5 class="section-title text-uppercase">Norbond</h5>
-          <!-- <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a> -->
+          <h5 class="section-title text-uppercase" style="color: white !important;">Norbond</h5>
+
         </div>
 
         <div class="col-auto">
@@ -263,7 +287,7 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel ">Menu</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
@@ -271,70 +295,125 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
 
-
-
-                <!--           hoome nav staring -->
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
+                  <a class="nav-link contact-link" href="index.html">Home</a>
 
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="dropdownHome" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Home</a>
+
+
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Home Layout 1</a>
+                    </li>
+                    <li>
+                      <a href="home2.html" class="dropdown-item item-anchor">Home Layout 2 <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="home3.html" class="dropdown-item item-anchor">Home Layout 3 <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="home4.html" class="dropdown-item item-anchor">Home Layout 4 <span class="badge bg-primary"></span></a>
+                    </li>
+                  </ul>
+
+
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link contact-link" href="shop-four-column-wide.html">Services</a>
+                </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="shop-four-column-wide.html">Services</a>
+                  <a class="nav-link contact-link" href="blog-classic.html">Portfolio</a>
                 </li>
 
 
 
+
+
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Pages</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
+                    <li>
+                      <a href="about.html" class="dropdown-item item-anchor">About <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="cart.html" class="dropdown-item item-anchor">Cart <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="checkout.html" class="dropdown-item item-anchor">Checkout <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="coming-soon.html" class="dropdown-item item-anchor">Coming Soon <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="contact.html" class="dropdown-item item-anchor">Contact <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="error-page.html" class="dropdown-item item-anchor">Error Page <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="faqs.html" class="dropdown-item item-anchor">FAQs <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="my-account.html" class="dropdown-item item-anchor">My Account <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="order-tracking.html" class="dropdown-item item-anchor">Order Tracking <span class="badge bg-primary"></span></a>
+                    </li>
+                    <li>
+                      <a href="wishlist.html" class="dropdown-item item-anchor">Wishlist <span class="badge bg-primary"></span></a>
+                    </li>
+                  </ul>
+                </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="blog-classic.html">Portfolio</a>
+                  <a class="nav-link contact-link" href="single-post-no-sidebar.html">About</a>
                 </li>
-
-
                 <li class="nav-item">
-                  <a class="nav-link" href="single-post-no-sidebar.html">About</a>
+                  <a class="nav-link contact-link contactHide-link" href="contact.html">Contact</a>
                 </li>
 
-
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-
-
-
-
-
+              </ul>
             </div>
           </div>
-
         </div>
 
         <div class="d-none d-lg-block col-3 col-lg-auto">
           <ul class="list-unstyled d-flex m-0">
-            <li class="d-none d-lg-block" style="visibility: hidden;">
-              <a href="#" class="text-uppercase mx-3">Wishlist <span class="wishlist-count">(0)</span></a>
+
+
+            <li class="nav-item">
+              <a class="nav-link contact-link" href="contact.html">Contact</a>
             </li>
+
             <!-- <li class="d-none d-lg-block">
-              <a href="wishlist.html" class="text-uppercase mx-3">Wishlist <span class="wishlist-count">(0)</span>
-              </a>
-            </li> -->
-            <!-- <li class="d-none d-lg-block">
-              <a href="cart.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span class="cart-count">(0)</span>
+              <a href="cart.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">Cart <span class="cart-count">(0)</span>
               </a>
             </li> -->
             <!-- <li class="d-lg-none">
               <a href="#" class="mx-2">
-                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#heart"></use></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#heart"></use>
+                </svg>
               </a>
             </li> -->
             <!-- <li class="d-lg-none">
-              <a href="#" class="mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+              <a href="#" class="mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#cart"></use>
+                </svg>
               </a>
             </li> -->
             <!-- <li class="search-box mx-2">
               <a href="#search" class="search-button">
-                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#search"></use></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#search"></use>
+                </svg>
               </a>
             </li> -->
           </ul>
@@ -346,69 +425,92 @@
   </nav>
 
 
-<section class="hero-section jarallax text-center">
-  <img src="images/new/30.jpg" class="jarallax-img">
-  <div class="py-5">
+  <!-- <section class="hero-section jarallax text-center">
+    <img src="images/new/30.jpg" class="jarallax-img">
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex w-100 flex-wrap flex-column justify-content-center align-items-center my-5 text-white">
+            <h1 class="page-title text-uppercase" style="color: white !important;">Comprehensive Apparel Manufacturing &
+              Sourcing</h1>
+
+            <nav class="breadcrumb text-white">
+              <a class="breadcrumb-item" href="#">Home</a>
+            <a class="breadcrumb-item" href="#">Pages</a>
+            <span class="breadcrumb-item active" aria-current="page">Shop</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <section class="text-white text-center">
+    <div class="slideshow slide-in d-flex justify-content-center align-items-center" style="height: 100vh;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex align-items-center justify-content-center" style="background-image:url(images/new/30.jpg); background-size: cover; background-position: center;">
+          <div class="banner-content text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <h3 class="page-title text-uppercase" style="color: white !important;">Comprehensive Apparel
+                    Manufacturing & Sourcing</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="features py-5">
     <div class="container">
       <div class="row">
-        <div class="d-flex w-100 flex-wrap flex-column justify-content-center align-items-center my-5 text-white">
-          <h1 class="page-title text-uppercase" style="color: white !important;">Comprehensive Apparel Manufacturing & Sourcing</h1>
-
-          <nav class="breadcrumb text-white">
-            <!-- <a class="breadcrumb-item" href="#">Home</a>
-            <a class="breadcrumb-item" href="#">Pages</a>
-            <span class="breadcrumb-item active" aria-current="page">Shop</span> -->
-          </nav>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="0">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24">
+              <use xlink:href="#calendar"></use>
+            </svg>
+            <h4 class="element-title text-capitalize my-3">Global Reach </h4>
+            <p>Delivering apparel solutions across India, UAE, UK, and Russia.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="300">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24">
+              <use xlink:href="#shopping-bag"></use>
+            </svg>
+            <h4 class="element-title text-capitalize my-3">Sustainable & Ethical </h4>
+            <p>Responsible production practices ensuring environmental and social commitment.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="600">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24">
+              <use xlink:href="#gift"></use>
+            </svg>
+            <h4 class="element-title text-capitalize my-3">Scalable Production </h4>
+            <p>From low MOQ orders to large-scale vertical factory solutions.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="900">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24">
+              <use xlink:href="#arrow-cycle"></use>
+            </svg>
+            <h4 class="element-title text-capitalize my-3">Comprehensive Solutions</h4>
+            <p>Managing everything from sourcing, production, logistics, and quality control.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-
-<section class="features py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="0">
-        <div class="py-5">
-          <svg width="38" height="38" viewBox="0 0 24 24">
-            <use xlink:href="#calendar"></use>
-          </svg>
-          <h4 class="element-title text-capitalize my-3">Global Reach </h4>
-          <p>Delivering apparel solutions across India, UAE, UK, and Russia.</p>
-        </div>
-      </div>
-      <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="300">
-        <div class="py-5">
-          <svg width="38" height="38" viewBox="0 0 24 24">
-            <use xlink:href="#shopping-bag"></use>
-          </svg>
-          <h4 class="element-title text-capitalize my-3">Sustainable & Ethical </h4>
-          <p>Responsible production practices ensuring environmental and social commitment.</p>
-        </div>
-      </div>
-      <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="600">
-        <div class="py-5">
-          <svg width="38" height="38" viewBox="0 0 24 24">
-            <use xlink:href="#gift"></use>
-          </svg>
-          <h4 class="element-title text-capitalize my-3">Scalable Production </h4>
-          <p>From low MOQ orders to large-scale vertical factory solutions.</p>
-        </div>
-      </div>
-      <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="900">
-        <div class="py-5">
-          <svg width="38" height="38" viewBox="0 0 24 24">
-            <use xlink:href="#arrow-cycle"></use>
-          </svg>
-          <h4 class="element-title text-capitalize my-3">Comprehensive Solutions</h4>
-          <p>Managing everything from sourcing, production, logistics, and quality control.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -420,8 +522,7 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-    <img src="images/product-thumb-16.jpg" alt="product"
-                  class="product-image img-fluid">
+              <img src="images/product-thumb-16.jpg" alt="product" class="product-image img-fluid">
               <!-- <a href="#" class="btn-icon btn-wishlist">
                 <svg width="24" height="24" viewBox="0 0 24 24">
                   <use xlink:href="#heart"></use>
@@ -429,7 +530,7 @@
               </a> -->
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Design & Prototyping </a>
+                  <a>Design & Prototyping </a>
                 </h3>
                 <!-- <a href="single-product.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a> -->
               </div>
@@ -447,7 +548,7 @@
               </a> -->
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Fabric & Material Sourcing</a>
+                  <a>Fabric & Material Sourcing</a>
                 </h3>
                 <!-- <a href="single-product.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a> -->
               </div>
@@ -457,12 +558,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-           <img src="images/product-thumb-18.jpg" alt="product"
-                  class="product-image img-fluid">
-           
+              <img src="images/product-thumb-18.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Sampling
+                  <a>Sampling
                   </a>
                 </h3>
                 <!-- <a href="single-product.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a> -->
@@ -473,12 +573,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-              <img src="images/product-thumb-19.jpg" alt="product"
-                  class="product-image img-fluid">
-            
+              <img src="images/product-thumb-19.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Bulk Production     </a>
+                  <a>Bulk Production </a>
                 </h3>
                 <!-- <a href="single-product.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a> -->
               </div>
@@ -488,12 +587,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-         <img src="images/product-thumb-20.jpg" alt="product"
-                  class="product-image img-fluid">
-              
+              <img src="images/product-thumb-20.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Private Label Manufacturing
+                  <a>Private Label Manufacturing
                   </a>
                 </h3>
 
@@ -504,12 +602,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-              <img src="images/product-thumb-21.jpg" alt="product"
-                  class="product-image img-fluid">
-           
+              <img src="images/product-thumb-21.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a>Sustainable Apparel Production 
+                  <a>Sustainable Apparel Production
                   </a>
                 </h3>
 
@@ -524,12 +621,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-            <img src="images/product-thumb-22.jpg" alt="product"
-                  class="product-image img-fluid">
-           
+              <img src="images/product-thumb-22.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Custom Corporate Orders</a>
+                  <a>Custom Corporate Orders</a>
                 </h3>
 
               </div>
@@ -539,12 +635,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-             <img src="images/product-thumb-23.jpg" alt="product"
-                  class="product-image img-fluid">
-            
+              <img src="images/product-thumb-23.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Logistics
+                  <a>Logistics
                   </a>
                 </h3>
 
@@ -555,12 +650,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-             <img src="images/product-thumb-24.jpg" alt="product"
-                  class="product-image img-fluid">
-             
+              <img src="images/product-thumb-24.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Quality Control 
+                  <a>Quality Control
                   </a>
                 </h3>
 
@@ -571,9 +665,8 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-             <img src="images/product-thumb-25.jpg" alt="product"
-                  class="product-image img-fluid">
-           
+              <img src="images/product-thumb-25.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
                   <a>Embroidery</a>
@@ -586,9 +679,8 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-              <img src="images/product-thumb-26.jpg" alt="product"
-                  class="product-image img-fluid">
-              
+              <img src="images/product-thumb-26.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
                   <a>Printing
@@ -602,9 +694,8 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-             <img src="images/product-thumb-27.jpg" alt="product"
-                  class="product-image img-fluid">
-            
+              <img src="images/product-thumb-27.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
                   <a>Cut & Sew Manufacturing
@@ -618,9 +709,8 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-        <img src="images/product-thumb-28.jpg" alt="product"
-                  class="product-image img-fluid">
-          
+              <img src="images/product-thumb-28.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
                   <a>Technical Design
@@ -634,12 +724,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-            <img src="images/product-thumb-29.jpg" alt="product"
-                  class="product-image img-fluid">
-            
+              <img src="images/product-thumb-29.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Packaging
+                  <a>Packaging
                   </a>
                 </h3>
 
@@ -650,12 +739,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-           <img src="images/product-thumb-30.jpg" alt="product"
-                  class="product-image img-fluid">
-             
+              <img src="images/product-thumb-30.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Organic Fabrics
+                  <a>Organic Fabrics
                   </a>
                 </h3>
 
@@ -666,12 +754,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-             <img src="images/product-thumb-31.jpg" alt="product"
-                  class="product-image img-fluid">
-       
+              <img src="images/product-thumb-31.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Cotton Fabrics
+                  <a>Cotton Fabrics
                   </a>
                 </h3>
 
@@ -683,12 +770,11 @@
         <div class="col-md-3">
           <div class="product-item image-zoom-effect link-effect mb-5">
             <div class="image-holder">
-             <img src="images/product-thumb-31.jpg" alt="product"
-                  class="product-image img-fluid">
-       
+              <img src="images/product-thumb-31.jpg" alt="product" class="product-image img-fluid">
+
               <div class="product-content">
                 <h3 class="fs-5 mt-3 text-uppercase">
-                  <a >Polyester Fabrics
+                  <a>Polyester Fabrics
 
                   </a>
                 </h3>
@@ -698,25 +784,7 @@
           </div>
         </div>
       </div>
-      <!-- <nav aria-label="Page navigation" class="d-flex justify-content-center mt-5">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <i class="icon icon-arrow-left"></i>
-            </a>
-          </li>
-          <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item"><a class="page-link" href="#">5</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <i class="icon icon-arrow-right"></i>
-            </a>
-          </li>
-        </ul>
-      </nav> -->
+
   </section>
   <section class="product-tabs mt-5">
     <div class="container">
@@ -740,11 +808,11 @@
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
               <!-- <h5>Product Description</h5> -->
               <p>We refine your concepts into production-ready designs </p>
-                <!-- <ul> -->
-                <!-- <li>Donec nec justo eget felis facilisis fermentum.</li>
+              <!-- <ul> -->
+              <!-- <li>Donec nec justo eget felis facilisis fermentum.</li>
                 <li>Suspendisse urna viverra non, semper suscipit pede.</li>
                 <li>Aliquam porttitor mauris sit amet orci.</li> -->
-                <!-- </ul> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+              <!-- </ul> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
               eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede.
               Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
               pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
@@ -893,8 +961,8 @@
         <div class="col-md-3 col-sm-6 text-center">
           <div class="footer-menu footer-menu-004 border-animation-left">
             <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
-            <p><a href="mailto:contact@yourcompany.com"
-                class="item-anchor">contact@yourcompany.com</a></p>
+            <p><a href="home4.html" class="item-anchor">Commitment & Environment Page</a>
+            <p><a href="mailto:contact@yourcompany.com" class="item-anchor">contact@yourcompany.com</a></p>
             <p><a href="tel:+43720115278" class="item-anchor">+43 720 115 278</a>
             </p>
           </div>
