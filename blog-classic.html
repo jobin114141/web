@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    @media screen and (min-width: 992px) {
-      .contactHide-link {
-        display: none !important;
-      }
+<style>
+  @media screen and (min-width: 992px) {
+    .contactHide-link {
+      display: none !important;
     }
-  </style>
+  }
+
+  @media screen and (max-width: 991px) {
+
+    /* Mobile */
+    .contact-link {
+      color: black !important;
+      /* Color on mobile */
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+
+    /* Large screens */
+    .contact-link {
+      color: white !important;
+      /* Color on large screens */
+    }
+
+    .contactHide-link {
+      display: none !important;
+    }
+  }
+</style>
+
 <head>
   <title>Norbond</title>
   <meta charset="utf-8">
@@ -253,13 +276,13 @@
   </div>
 
   <nav
-    class="navbar navbar-expand-lg fixed-top lg:text-white text-uppercase fs-6 p-3 align-items-center border-bottom border-light border-opacity-25">
+    class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
     <div class="container-fluid">
       <div class="row justify-content-between align-items-center w-100">
 
         <div class="col-auto">
-          <!-- <a class="navbar-brand" href="index.html"><img src="images/light-logo.png" alt="logo"></a> -->
-          <h5 class="section-title text-uppercase">Norbond</h5>
+          <h5 class="section-title text-uppercase" style="color: white !important;">Norbond</h5>
+
         </div>
 
         <div class="col-auto">
@@ -271,7 +294,7 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel ">Menu</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
@@ -279,35 +302,86 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
 
-
-
-
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link contact-link" href="index.html">Home</a>
+
                 </li>
+                <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="dropdownHome" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Home</a>
 
 
+                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
+                  <li>
+                    <a href="index.html" class="dropdown-item item-anchor">Home Layout 1</a>
+                  </li>
+                  <li>
+                    <a href="home2.html" class="dropdown-item item-anchor">Home Layout 2 <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="home3.html" class="dropdown-item item-anchor">Home Layout 3 <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="home4.html" class="dropdown-item item-anchor">Home Layout 4 <span class="badge bg-primary"></span></a>
+                  </li>
+                </ul>
+
+
+              </li> -->
+                <li class="nav-item">
+                  <a class="nav-link contact-link" href="shop-four-column-wide.html">Services</a>
+                </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="shop-four-column-wide.html">Services</a>
+                  <a class="nav-link contact-link" href="blog-classic.html">Portfolio</a>
                 </li>
 
+
+
+
+
+                <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
+                  <li>
+                    <a href="about.html" class="dropdown-item item-anchor">About <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="cart.html" class="dropdown-item item-anchor">Cart <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="checkout.html" class="dropdown-item item-anchor">Checkout <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="coming-soon.html" class="dropdown-item item-anchor">Coming Soon <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="dropdown-item item-anchor">Contact <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="error-page.html" class="dropdown-item item-anchor">Error Page <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="faqs.html" class="dropdown-item item-anchor">FAQs <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="my-account.html" class="dropdown-item item-anchor">My Account <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="order-tracking.html" class="dropdown-item item-anchor">Order Tracking <span class="badge bg-primary"></span></a>
+                  </li>
+                  <li>
+                    <a href="wishlist.html" class="dropdown-item item-anchor">Wishlist <span class="badge bg-primary"></span></a>
+                  </li>
+                </ul>
+              </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="blog-classic.html">Portfolio</a>
+                  <a class="nav-link contact-link" href="single-post-no-sidebar.html">About</a>
                 </li>
-
-
                 <li class="nav-item">
-                  <a class="nav-link" href="single-post-no-sidebar.html">About</a>
+                  <a class="nav-link contact-link contactHide-link" href="contact.html">Contact</a>
                 </li>
-
-
-                <li class="nav-item">
-                  <a class="nav-link contactHide-link" href="contact.html">Contact</a>
-                </li>
-
-
-
 
               </ul>
             </div>
@@ -316,10 +390,39 @@
 
         <div class="d-none d-lg-block col-3 col-lg-auto">
           <ul class="list-unstyled d-flex m-0">
+
+
             <li class="nav-item">
-              <a class="nav-link " href="contact.html">Contact</a>
+              <a class="nav-link contact-link" href="contact.html">Contact</a>
             </li>
 
+            <!-- <li class="d-none d-lg-block">
+            <a href="cart.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+              aria-controls="offcanvasCart">Cart <span class="cart-count">(0)</span>
+            </a>
+          </li> -->
+            <!-- <li class="d-lg-none">
+            <a href="#" class="mx-2">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="#heart"></use>
+              </svg>
+            </a>
+          </li> -->
+            <!-- <li class="d-lg-none">
+            <a href="#" class="mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+              aria-controls="offcanvasCart">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="#cart"></use>
+              </svg>
+            </a>
+          </li> -->
+            <!-- <li class="search-box mx-2">
+            <a href="#search" class="search-button">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="#search"></use>
+              </svg>
+            </a>
+          </li> -->
           </ul>
         </div>
 
@@ -334,13 +437,15 @@
       <div class="container">
         <div class="row">
           <div class="d-flex w-100 flex-wrap flex-column justify-content-center align-items-center my-5 text-white">
-            <h2 class="page-title text-uppercase" style="color: white !important;">Our Work: Excellence in Apparel Manufacturing</h2>
-  
-            <nav class="breadcrumb text-white">
-              <!-- <a class="breadcrumb-item" href="#">Home</a>
+            <h3 class="page-title text-uppercase" style="color: white !important;">Our Work:<br /><span>Excellence in
+                Apparel
+                Manufacturing</span></h2>
+
+              <nav class="breadcrumb text-white">
+                <!-- <a class="breadcrumb-item" href="#">Home</a>
               <a class="breadcrumb-item" href="#">Pages</a>
               <span class="breadcrumb-item active" aria-current="page">Shop</span> -->
-            </nav>
+              </nav>
           </div>
         </div>
       </div>
@@ -694,8 +799,7 @@
           <div class="footer-menu footer-menu-004 border-animation-left">
             <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
             <p><a href="home4.html" class="item-anchor">Commitment & Environment Page</a>
-            <p><a href="mailto:contact@yourcompany.com"
-                class="item-anchor">contact@yourcompany.com</a></p>
+            <p><a href="mailto:contact@yourcompany.com" class="item-anchor">contact@yourcompany.com</a></p>
             <p><a href="tel:+43720115278" class="item-anchor">+43 720 115 278</a>
             </p>
           </div>
