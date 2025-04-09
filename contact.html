@@ -170,15 +170,16 @@
 
 
 
-  <nav class="navbar navbar-expand-lg text-uppercase fs-6 p-3 border-bottom align-items-center"
-  style="position: fixed !important; top: 0 !important; left: 0; width: 100% !important; z-index: 1030 !important; background-color: white !important;">
+  <nav id="mainNavbar" class="navbar navbar-expand-lg text-uppercase fs-6 p-3 border-bottom align-items-center"
+     style="position: fixed !important; top: 0 !important; left: 0; width: 100% !important; z-index: 1030 !important; background-color: white !important; transition: background-color 0.3s ease !important;">
 
     <div class="container-fluid">
       <div class="row justify-content-between align-items-center w-100">
 
         <div class="col-auto">
+          
           <!-- <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a> -->
-          <h5 class="section-title text-uppercase">Norbond</h5>
+          <h5 id="navbarTitle" class="section-title text-uppercase">Norbond</h5>
         </div>
 
         <div class="col-auto">
@@ -452,6 +453,25 @@
       </div>
     </div>
   </footer>
+<script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('mainNavbar');
+    const links = navbar.querySelectorAll('.nav-link');
+    const title = document.getElementById('navbarTitle'); // Norbond title
+
+    if (window.scrollY > 10) {
+      navbar.style.setProperty('background-color', 'black', 'important');
+      links.forEach(link => link.style.setProperty('color', 'white', 'important'));
+      title.style.setProperty('color', 'white', 'important');
+    } else {
+      navbar.style.setProperty('background-color', 'white', 'important');
+      links.forEach(link => link.style.setProperty('color', '', 'important'));
+      title.style.setProperty('color', 'black', 'important'); // or '' if inherited
+    }
+  });
+</script>
+
+
   <script src="js/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/SmoothScroll.js"></script>
