@@ -179,7 +179,7 @@
         <div class="col-auto">
           
           <!-- <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a> -->
-          <h5 id="navbarTitle" class="section-title text-uppercase">Norbond</h5>
+          <h5 id="navbarTitle" class="norbondTitileNav">Norbond</h5>
         </div>
 
         <div class="col-auto">
@@ -453,23 +453,43 @@
       </div>
     </div>
   </footer>
-<script>
-  window.addEventListener('scroll', function () {
-    const navbar = document.getElementById('mainNavbar');
-    const links = navbar.querySelectorAll('.nav-link');
-    const title = document.getElementById('navbarTitle'); // Norbond title
+  <script>
+function updateNavbarStyle() {
+  const navbar = document.getElementById('mainNavbar');
+  const links = navbar.querySelectorAll('.nav-link');
+  const title = document.getElementById('navbarTitle');
+  const title2 = document.getElementById('norbondTitileNav');
+  const isMobile = window.innerWidth < 992;
 
-    if (window.scrollY > 10) {
-      navbar.style.setProperty('background-color', 'black', 'important');
-      links.forEach(link => link.style.setProperty('color', 'white', 'important'));
-      title.style.setProperty('color', 'white', 'important');
+  if (window.scrollY > 10) {
+    navbar.style.backgroundColor = 'black';
+
+    if (!isMobile) {
+      links.forEach(link => link.setAttribute('style', 'color: white !important'));
+      title.setAttribute('style', 'color: white !important');
+      title2.setAttribute('style', 'color: white !important');
     } else {
-      navbar.style.setProperty('background-color', 'white', 'important');
-      links.forEach(link => link.style.setProperty('color', '', 'important'));
-      title.style.setProperty('color', 'black', 'important'); // or '' if inherited
+      links.forEach(link => link.setAttribute('style', 'color: black !important'));
+      title.setAttribute('style', 'color: white !important');
+      title2.setAttribute('style', 'color: white !important');
     }
-  });
-</script>
+  } else {
+    navbar.style.backgroundColor = 'white';
+
+    // Set everything to black initially (except the "Norbond" titles if you want them white)
+    links.forEach(link => link.setAttribute('style', 'color: black !important'));
+
+    title.setAttribute('style', 'color: black !important'); // change to black initially
+    title2.setAttribute('style', 'color: black !important');
+  }
+}
+
+  
+    window.addEventListener('scroll', updateNavbarStyle);
+    window.addEventListener('resize', updateNavbarStyle); // reapply styles on resize
+    window.addEventListener('load', updateNavbarStyle); // initialize on page load
+  </script>
+  
 
 
   <script src="js/jquery.min.js"></script>
