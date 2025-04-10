@@ -22,10 +22,53 @@
       display: none !important;
     }
   }
+  @media (max-width: 767px) {
+  .swiper-pagination {
+    display: none !important;
+  }
+  
+}
+
+@media (min-width: 992px) {
+  .swiper-pagination {
+    display: none !important;
+  }}
+
+
+  .logo-bar {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .logo-slider {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 20s linear infinite;
+  }
+
+  .logo-image {
+    max-height: 60px;
+    margin: 0 30px;
+  }
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Duplicate the content for seamless looping */
+  .logo-track {
+    display: flex;
+  }
 </style>
 
 <head>
   <title>Norbond</title>
+  <link rel="icon" type="image/png" href="images/logos/0002-Photoroom.png"> <!-- ✅ Favicon line -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +82,7 @@
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -452,7 +496,7 @@
 
 
  <!-- 4 icon section -->
-
+<br/>
   <section class="features py-5">
     <div class="container">
       <div class="row">
@@ -496,9 +540,6 @@
     </div>
   </section>
 
-
-  <h6 style=" text-transform: uppercase; text-align: center;">Showcasing our factories, capabilities, and manufacturing
-    excellence.</h6>
 
   <section class="video py-5 overflow-hidden">
 
@@ -558,7 +599,7 @@
             <div class="cat-item image-zoom-effect">
               <div class="image-holder">
                 <a href="shop-four-column-wide.html">
-                  <img src="images/new/13.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/new/8.jpg" alt="categories" class="product-image img-fluid">
                 </a>
               </div>
               <div class="category-content ">
@@ -572,7 +613,7 @@
             <div class="cat-item image-zoom-effect">
               <div class="image-holder">
                 <a href="shop-four-column-wide.html">
-                  <img src="images/new/9.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/new/33.jpg" alt="categories" class="product-image img-fluid">
                 </a>
               </div>
               <div class="category-content">
@@ -586,7 +627,7 @@
             <div class="cat-item image-zoom-effect">
               <div class="image-holder">
                 <a href="shop-four-column-wide.html">
-                  <img src="images/new/20.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/new/45.jpg" alt="categories" class="product-image img-fluid">
                 </a>
               </div>
               <div class="category-content">
@@ -627,168 +668,6 @@
     </div>
   </section>
 
-
-
-
-
-  <!-- 
-  <section id="new-arrival" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">Our New Arrivals</h4>
-        <a href="shop-sidebar.html" class="btn-link">View All Products</a>
-      </div>
-      <div class="swiper product-swiper open-up" data-aos="zoom-out">
-        <div class="swiper-wrapper d-flex">
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/product-item1.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="element-title text-uppercase fs-5 mt-3">
-                    <a href="single-product.html">Dark florish onepiece</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/product-item2.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="single-product.html">Baggy Shirt</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/product-item3.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="single-product.html">Cotton off-white shirt</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/product-item4.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="single-product.html">Crop sweater</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/product-item10.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="single-product.html">Crop sweater</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#angle-left"></use>
-        </svg></div>
-      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#angle-right"></use>
-        </svg></div>
-    </div>
-  </section> -->
-  <!-- <section id="best-sellers" class="best-sellers product-carousel py-5 position-relative overflow-hidden">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase" style="margin: 0 auto; text-align: center;">Consectetur facilisis</h4>
-
-        <article class="post-item">
-
-          <div class="post-content py-5">
-            <div class="post-description text-center">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur facilisis vivamus massa magna.
-                Blandit mauris libero condimentum commodo morbi consectetur sociis convallis sit. Magna diam amet
-                justo sed vel dolor et volutpat integer. Iaculis sit sapien hac odio elementum egestas neque.
-                Adipiscing purus euismod orci sem amet, et. Turpis erat ornare nisi laoreet est euismod.</p>
-              <p>Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non
-                aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel. Morbi arcu
-                amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum erat.
-                Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque bibendum
-                eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit ornare.
-                Purus ut quis sed venenatis eget ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt
-                nunc integer sit.</p>
-              <blockquote>“Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor
-                curabitur non aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus,
-                vel.</blockquote>
-
-
-
-
-
-            </div>
-          </div>
-
-      </div>
-      </article>
-    </div>
-
-
-    </div>
-  </section> -->
 
 
 
@@ -945,7 +824,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>   
           <div class="swiper-slide">
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
@@ -971,12 +850,6 @@
               <div class="image-holder">
 
                 <img src="images/new/18.jpg" alt="product" class="product-image img-fluid">
-
-                <!-- <a href="wishlist.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a> -->
                 <div class="product-content">
                   <h5 class="text-uppercase fs-5 mt-3">
                     <a>Handmade crop sweater</a>
@@ -986,28 +859,135 @@
               </div>
             </div>
           </div>
+        
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
 
+                <img src="images/new/8.jpg" alt="product" class="product-image img-fluid">
+
+                <!-- <a href="wishlist.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a> -->
+                <div class="product-content ">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a>Dark florish onepiece</a>
+                  </h5>
+                  <!-- <a href="cart.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+
+                <img src="images/new/10.jpg" alt="product" class="product-image img-fluid">
+
+                <!-- <a href="wishlist.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a> -->
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a>Baggy Shirt</a>
+                  </h5>
+
+                </div>
+              </div>
+            </div>
+          </div>   
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+
+                <img src="images/new/21.jpg" alt="product" class="product-image img-fluid">
+
+                <!-- <a href="wishlist.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a> -->
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a>Cotton off-white shirt</a>
+                  </h5>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+
+                <img src="images/new/18.jpg" alt="product" class="product-image img-fluid">
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a>Handmade crop sweater</a>
+                  </h5>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+      <!-- <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
           <use xlink:href="#angle-left"></use>
         </svg></div>
       <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
           <use xlink:href="#angle-right"></use>
-        </svg></div>
+        </svg></div> -->
     </div>
   </section>
 
+  <section class="collection bg-light position-relative py-5">
+    <div class="container">
+      <div class="row">
+        <div class="title-xlarge text-uppercase txt-fx domino">Collection</div>
+        <div class="collection-item row my-5 bg-white rounded shadow overflow-hidden">
+          <!-- Left Column (Image) -->
+          <div class="col-md-6 d-flex align-items-center justify-content-center p-0">
+            <div class="image-holder w-100 text-center">
+              <img src="images/logos/0001.png" alt="collection" class="product-image img-fluid">
+            </div>
+          </div>
+  
+          <!-- Right Column (Text) -->
+          <div class="col-md-6 d-flex align-items-center p-5">
+            <div class="collection-content text-center w-100">
+              <h3 class="element-title text-uppercase">Partner With Us</h3>
+              <p>Let us handle your apparel manufacturing needs with precision and quality. Get in touch with us today.</p>
+              <a href="contact.html" class="btn btn-dark text-uppercase mt-3">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="logo-bar py-5 my-5">
     <div class="container">
       <div class="row">
-        <div class="logo-content d-flex flex-wrap justify-content-between">
-          <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+        <div class="logo-slider">
+          <div class="logo-track">
+            <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
+            <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
+            <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
+            <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
+            <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+            <!-- Duplicate for infinite scroll effect -->
+            <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
+            <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
+            <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
+            <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
+            <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+          </div>
         </div>
       </div>
     </div>
@@ -1016,71 +996,18 @@
   <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 py-5 my-5">
-          <div class="subscribe-header text-center pb-3">
-            <h3 class="section-title text-uppercase">Partner With Us</h3>
-            <p> Let us handle your apparel manufacturing needs with precision and quality. Get in touch with us today.
-            </p>
+        <div class="col-md-10 py-5 my-5">
+          <div class="row justify-content-center align-items-center">
+            <!-- Centered Image -->
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="images/logos/0003.png" alt="Partner with us" class="img-fluid" />
+            </div>
           </div>
-          <!-- <form id="form" class="d-flex flex-wrap gap-2">
-            <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg">
-          
-          </form> -->
-          <button class="btn btn-dark btn-lg text-uppercase w-100">Contact Us</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="instagram position-relative">
-    <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
-      <a href="https://www.instagram.com/Norbond/" class="btn btn-dark px-5">Follow us on Instagram</a>
-    </div>
-    <div class="row g-0">
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/Norbond/" target="_blank">
-            <img src="images/new/16.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/Norbond/" target="_blank">
-            <img src="images/new/11.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/Norbond/" target="_blank">
-            <img src="images/new/25.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/Norbond/" target="_blank">
-            <img src="images/new/28.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/Norbond/" target="_blank">
-            <img src="images/new/26.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/Norbond/" target="_blank">
-            <img src="images/new/29.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <footer id="footer " class="mt-5">
     <div class="container text-center">
@@ -1094,45 +1021,7 @@
             </div>
             <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus
               vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
-            <!-- <div class="social-links">
-              <ul class="list-unstyled d-flex flex-wrap gap-3">
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#youtube"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#pinterest"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div> -->
+          
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
@@ -1157,27 +1046,7 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-003">
-            <h5 class="widget-title text-uppercase mb-4">Help & Info</h5>
-            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
-           
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Returns + Exchanges</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Shipping + Delivery</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Contact Us</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Find us easy</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div> -->
+
         <div class="col-md-3 col-sm-6">
           
           <div class="footer-menu footer-menu-004 border-animation-left">
@@ -1216,6 +1085,38 @@
       </div>
     </div>
   </footer>
+<!-- Swiper JS (only once) -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper('.product-swiper', {
+  loop: true,
+  loopAdditionalSlides: 3, // helps avoid the gap issue
+  speed: 1500, // transition speed in ms (adjust for smoothness)
+  autoplay: {
+    delay: 600, // almost zero delay between slides
+    disableOnInteraction: false,
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  navigation: {
+    nextEl: '.icon-arrow-right',
+    prevEl: '.icon-arrow-left',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+</script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
   <script src="js/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/SmoothScroll.js"></script>
